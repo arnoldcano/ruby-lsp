@@ -1,0 +1,13 @@
+{
+  "name": "ruby-lsp",
+  "owner": {
+    "name": "Arnold Cano"
+  },
+  "plugins": [
+    {
+      "name": "ruby-lsp",
+      "source": ".",
+      "description": "Ruby LSP integration for Claude Code"
+    }
+  ]
+}

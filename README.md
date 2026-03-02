@@ -4,8 +4,17 @@ Ruby LSP integration for Claude Code. Provides language intelligence (go-to-defi
 
 ## Installation
 
+Add the marketplace and install:
+
 ```bash
-claude plugin install /path/to/ruby-lsp
+/plugin marketplace add arnoldcano/ruby-lsp
+/plugin install ruby-lsp@ruby-lsp
+```
+
+Or load directly from a local clone:
+
+```bash
+claude --plugin-dir /path/to/ruby-lsp
 ```
 
 ## How It Works
