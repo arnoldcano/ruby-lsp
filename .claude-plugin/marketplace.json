@@ -1,13 +1,16 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ruby-lsp",
+  "description": "Ruby LSP integration for Claude Code",
   "owner": {
     "name": "Arnold Cano"
   },
   "plugins": [
     {
       "name": "ruby-lsp",
-      "source": ".",
-      "description": "Ruby LSP integration for Claude Code"
+      "description": "Ruby LSP integration for Claude Code",
+      "source": "./",
+      "category": "development"
     }
   ]
 }
