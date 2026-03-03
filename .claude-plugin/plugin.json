@@ -1,7 +1,7 @@
 {
   "name": "ruby-lsp",
   "description": "Ruby LSP integration for Claude Code",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "Arnold Cano"
   },
