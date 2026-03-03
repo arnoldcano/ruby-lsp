@@ -11,20 +11,7 @@
       "description": "Ruby LSP integration for Claude Code",
       "version": "1.0.2",
       "source": "./",
-      "category": "development",
-      "lspServers": {
-        "ruby": {
-          "command": "ruby-lsp",
-          "extensionToLanguage": {
-            ".rb": "ruby",
-            ".erb": "erb",
-            ".rake": "ruby",
-            ".gemspec": "ruby",
-            ".ru": "ruby",
-            "Rakefile": "ruby"
-          }
-        }
-      }
+      "category": "development"
     }
   ]
 }
