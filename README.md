@@ -37,17 +37,14 @@ claude --plugin-dir /path/to/ruby-lsp
 - `.rake` — Rake task files
 - `.gemspec` — Gem specifications
 - `.ru` — Rack configuration
-- `Rakefile` — Rake build files
 
 ## LSP Operations
 
-| Operation | Description |
-|-----------|-------------|
-| `goToDefinition` | Find where a symbol is defined |
-| `findReferences` | Find all references to a symbol |
-| `hover` | Get type info and documentation |
-| `documentSymbol` | List all symbols in a file |
-| `workspaceSymbol` | Search symbols across the project |
+- **goToDefinition** — Find where a symbol is defined
+- **findReferences** — Find all references to a symbol
+- **hover** — Get type info and documentation
+- **documentSymbol** — List all symbols in a file
+- **workspaceSymbol** — Search symbols across the project
 
 ## License
 
