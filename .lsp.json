@@ -1,6 +1,6 @@
 {
   "ruby": {
-    "command": "${CLAUDE_PLUGIN_ROOT}/scripts/start.sh",
+    "command": "${CLAUDE_PLUGIN_ROOT}/hooks/launch.sh",
     "extensionToLanguage": {
       ".rb": "ruby",
       ".erb": "erb",

@@ -2,6 +2,24 @@
 
 Ruby LSP integration for Claude Code. Provides language intelligence (go-to-definition, hover, find references, and more) for Ruby files.
 
+## Prerequisites
+
+**Required:** Set `ENABLE_LSP_TOOL=1` so Claude Code exposes LSP tools. Without this, the LSP server starts but no tools (goToDefinition, hover, etc.) are available due to a [known race condition](https://github.com/anthropics/claude-code/issues/14803).
+
+```bash
+# Option 1: Set per-session
+ENABLE_LSP_TOOL=1 claude
+
+# Option 2: Add to your shell profile (~/.zshrc or ~/.bashrc)
+export ENABLE_LSP_TOOL=1
+```
+
+**Required:** The `ruby-lsp` gem must be installed:
+
+```bash
+gem install ruby-lsp
+```
+
 ## Installation
 
 Add the marketplace and install:
@@ -19,8 +37,8 @@ claude --plugin-dir /path/to/ruby-lsp
 
 ## How It Works
 
-1. **Launch:** Checks if `ruby` and `ruby-lsp` are available on PATH
-2. **LSP use:** Runs `ruby-lsp` as a language server via stdio
+1. **Session start hook** checks that `ENABLE_LSP_TOOL` is set and `ruby-lsp` is on PATH, warning if not
+2. **LSP launch** runs `ruby-lsp` as a language server via stdio
 
 ## Supported File Types
 
