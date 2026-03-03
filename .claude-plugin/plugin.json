@@ -5,6 +5,5 @@
   "author": {
     "name": "Arnold Cano"
   },
-  "license": "MIT",
-  "lspServers": "./.lsp.json"
+  "license": "MIT"
 }
