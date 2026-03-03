@@ -6,17 +6,5 @@
     "name": "Arnold Cano"
   },
   "license": "MIT",
-  "lspServers": {
-    "ruby": {
-      "command": "ruby-lsp",
-      "extensionToLanguage": {
-        ".rb": "ruby",
-        ".erb": "erb",
-        ".rake": "ruby",
-        ".gemspec": "ruby",
-        ".ru": "ruby",
-        "Rakefile": "ruby"
-      }
-    }
-  }
+  "lspServers": "./.lsp.json"
 }
